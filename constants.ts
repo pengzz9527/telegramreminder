@@ -7,7 +7,7 @@ interface Locales {
 
 export const locales: Locales = {
   en: {
-    appTitle: "Gemini Reminder Service",
+    appTitle: "telegram bot Reminder Service",
     pendingReminders: "Reminders",
     addReminder: "Add New Reminder",
     reminderTitle: "Title",
@@ -36,7 +36,7 @@ export const locales: Locales = {
     filterSent: "Sent",
   },
   zh: {
-    appTitle: "Gemini 提醒服务",
+    appTitle: "Telegram 机器人提醒服务",
     pendingReminders: "提醒列表",
     addReminder: "添加新提醒",
     reminderTitle: "标题",
