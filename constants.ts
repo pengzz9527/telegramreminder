@@ -1,0 +1,61 @@
+import type { LocaleStrings } from './types';
+
+interface Locales {
+  en: LocaleStrings;
+  zh: LocaleStrings;
+}
+
+export const locales: Locales = {
+  en: {
+    appTitle: "Gemini Reminder Service",
+    pendingReminders: "Reminders",
+    addReminder: "Add New Reminder",
+    reminderTitle: "Title",
+    reminderContent: "Content",
+    dueDate: "Due Date",
+    telegramUserId: "Telegram User ID",
+    telegramUserIdPlaceholder: "e.g., 123456789",
+    submit: "Add Reminder",
+    delete: "Delete",
+    noReminders: "No pending reminders. Add one to get started!",
+    footerText: "Powered by Gemini & React",
+    telegramBotToken: "Telegram Bot Token",
+    setToken: "Save Token",
+    tokenSaved: "Token saved successfully!",
+    tokenNotSetWarning: "Bot token is not set. Notifications will not be sent.",
+    tokenInfo: "Your token is stored locally in your browser and is never sent to any server except Telegram.",
+    showToken: "Show",
+    hideToken: "Hide",
+    statusPending: "Pending",
+    statusSent: "Sent",
+    edit: "Edit",
+    save: "Save",
+    cancel: "Cancel",
+  },
+  zh: {
+    appTitle: "Gemini 提醒服务",
+    pendingReminders: "提醒列表",
+    addReminder: "添加新提醒",
+    reminderTitle: "标题",
+    reminderContent: "内容",
+    dueDate: "截止日期",
+    telegramUserId: "Telegram 用户ID",
+    telegramUserIdPlaceholder: "例如 123456789",
+    submit: "添加提醒",
+    delete: "删除",
+    noReminders: "没有待处理的提醒。请添加一个新提醒！",
+    footerText: "由 Gemini 和 React 驱动",
+    telegramBotToken: "Telegram 机器人令牌",
+    setToken: "保存令牌",
+    tokenSaved: "令牌保存成功！",
+    tokenNotSetWarning: "机器人令牌未设置，将无法发送通知。",
+    tokenInfo: "您的令牌存储在本地浏览器中，除了 Telegram 之外，不会发送到任何服务器。",
+    showToken: "显示",
+    hideToken: "隐藏",
+    statusPending: "待处理",
+    statusSent: "已发送",
+    edit: "编辑",
+    save: "保存",
+    cancel: "取消",
+  },
+};

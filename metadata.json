@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Reminder ServiceV0928",
+  "description": "A web application that allows users to set reminders and receive notifications via Telegram. It supports English and Chinese languages and stores data locally in the browser.",
+  "requestFramePermissions": []
+}
