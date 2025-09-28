@@ -31,6 +31,9 @@ export const locales: Locales = {
     edit: "Edit",
     save: "Save",
     cancel: "Cancel",
+    filterAll: "All",
+    filterPending: "Pending",
+    filterSent: "Sent",
   },
   zh: {
     appTitle: "Gemini 提醒服务",
@@ -57,5 +60,8 @@ export const locales: Locales = {
     edit: "编辑",
     save: "保存",
     cancel: "取消",
+    filterAll: "全部",
+    filterPending: "待处理",
+    filterSent: "已发送",
   },
 };

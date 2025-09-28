@@ -32,4 +32,7 @@ export interface LocaleStrings {
   edit: string;
   save: string;
   cancel: string;
+  filterAll: string;
+  filterPending: string;
+  filterSent: string;
 }
