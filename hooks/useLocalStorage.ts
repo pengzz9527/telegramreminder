@@ -1,7 +1,8 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Dispatch, SetStateAction } from 'react';
 
-export const useLocalStorage = <T,>(key: string, initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>] => {
+// FIX: Use `Dispatch` and `SetStateAction` directly as the return type, as the `React` namespace is not imported.
+export const useLocalStorage = <T,>(key: string, initialValue: T): [T, Dispatch<SetStateAction<T>>] => {
   const [storedValue, setStoredValue] = useState<T>(() => {
     if (typeof window === 'undefined') {
       return initialValue;
@@ -15,7 +16,8 @@ export const useLocalStorage = <T,>(key: string, initialValue: T): [T, React.Dis
     }
   });
 
-  const setValue: React.Dispatch<React.SetStateAction<T>> = (value) => {
+  // FIX: Use `Dispatch` and `SetStateAction` directly for type annotation, as the `React` namespace is not imported.
+  const setValue: Dispatch<SetStateAction<T>> = (value) => {
     try {
       const valueToStore = value instanceof Function ? value(storedValue) : value;
       setStoredValue(valueToStore);
